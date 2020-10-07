@@ -1,0 +1,241 @@
+/*Mobile First*/
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+}
+
+.hero div button, #projects .container .flexContainer button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+}
+
+.flexContainer nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexContainer nav li {
+  margin: 5px;
+}
+
+.flexContainer nav li::after {
+  content: none;
+  display: block;
+  margin: 0px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero img {
+  width: 100%;
+  height: 700px;
+}
+
+.hero div {
+  position: absolute;
+  max-width: 250px;
+  top: 25%;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.hero div h1 {
+  text-align: center;
+  border: 5px solid black;
+  text-transform: uppercase;
+  Color: Black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+}
+
+.hero div i {
+  display: inline-block;
+  color: white;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+#About {
+  margin: 30px;
+}
+
+#About p {
+  text-align: justify;
+}
+
+#About h1 {
+  margin-bottom: 10px;
+}
+
+#About h1::after {
+  content: 'About';
+  border-bottom: 3px solid black;
+}
+
+#languages {
+  margin: 20px;
+}
+
+#languages h1 {
+  text-align: left;
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+
+#languages h1::after {
+  content: 'Experience With';
+  border-bottom: 3px solid black;
+}
+
+#languages .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#languages .container .padding {
+  text-align: center;
+  margin: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 200px;
+  font-size: 60px;
+  color: black;
+  display: block;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#languages .padding:hover {
+  background: black;
+  color: white;
+}
+
+#languages i:hover {
+  color: white;
+}
+
+#projects {
+  margin: 25px;
+}
+
+#projects h1 {
+  color: black;
+  margin-left: 10px;
+}
+
+#projects h1::after {
+  content: 'Projects';
+  border-bottom: 3px solid black;
+}
+
+#projects .container {
+  border: 3px solid black;
+  width: 100%;
+  height: auto;
+}
+
+#projects .container img {
+  width: 100%;
+}
+
+#projects .container .text {
+  padding: 20px;
+  text-align: justify;
+}
+
+#projects .container .flexContainer {
+  border-top: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#contact input[type=text], #contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#contact input[type=submit] {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#contact .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#footer {
+  background: black;
+  text-align: center;
+}
+
+#footer div h3 {
+  color: white;
+  text-align: center;
+}
+
+#footer div a {
+  color: white;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=styler.css.map */
