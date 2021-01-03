@@ -14,9 +14,7 @@ function AboutMe(){
     lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.
     </p>
     </div>
-    <div>
      {map}
-    </div>
     </section>
   
   )
