@@ -1,12 +1,12 @@
-h1, p {
-  font-family: Lato;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 
 
 * {
   box-sizing:border-box;
   margin:0px;
   padding:0px;
+  font-family: lato, sans-serif;
 }
 
 /* Header/navigation */
@@ -82,3 +82,57 @@ h1, p {
         margin-top: 1rem; 
         
   }
+
+
+  .aboutme {
+    padding-top:100px;
+    padding-bottom:200px;
+  }
+
+  .aboutme .first {
+      padding:40px;
+      font-size:20px;
+  }
+
+  .aboutme .first p {
+      margin-top:40px;
+      line-height: 1.5;
+  }
+
+  .container {
+   text-align:center;
+   justify-content:center;
+   display:flex;
+  border:1px solid black; 
+    margin:20px;
+}
+
+.hvr-fade {
+   display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                overflow: hidden;
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-property: color, background-color;
+                transition-property: color, background-color;
+                margin:0 auto;
+                border-radius: 0.5rem;
+                padding: 10px 50px 10px 50px;
+              margin:25px;
+                background:white;
+                --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+              box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+
+.hvr-fade img {
+   width:70px;
+   height:60px;
+}
+
+ .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+                background-color:black;
+                color: white;
+              }
