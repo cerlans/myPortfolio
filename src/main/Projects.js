@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import projectData from './projectdata.js'
 console.log(projectData)
 function Projects(props) {
+    const [className, setClass] = useState('dummy');
+  console.log(className)
+  function openClose(){
+    if(className === 'dummy') {
+      setClass('modal');
+      document.body.style.overflow = 'hidden'
+    } else {
+      setClass('dummy')
+      document.body.style.overflow = 'visible'
+    }
+  }
 return(
- <section className='projects'>
+  <section className='projects'>
     <div className='col'>
       <div className='imgcontainer'>
       <img src={props.image}/>
@@ -14,38 +26,23 @@ return(
       </div>
       <div className='footer'>
         <button>Live Demo</button>
-        <button className="modal-btn" onClick = {test}>View More</button>
+        <button className="modal-btn" onClick = {openClose}>View More</button>
       </div>
     </div>
 
 {/* Below this line is a modal that will appear when the 'view more' button is clicked */}
-  <div className="modal">
+  <div className= {className} onClick = {openClose}>
      <div className="modal-content">
         <div className="modal-header">
-           <span className="close-btn">&times;</span>
            <h1>{props.title}</h1>
         </div>
         <div className ='modal-inner'>
            <img src = {props.image}/>
            <p>{props.description}</p>
-           <h3>Tech Stacks</h3>
-           <ul>
-              <li>
-                 React
-              </li>
-              <li>
-                 React
-              </li>
-              <li>
-                 React
-              </li>
-              <li>
-                 React
-              </li>
-           </ul>
         </div>
         <div className="modal-footer">
            <button>Live Demo</button>
+           <button>Source Code</button>
         </div>
      </div>
   </div>
