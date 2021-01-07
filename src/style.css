@@ -35,6 +35,7 @@
 }
 
 /* Mobile side navigation, display when hamburger is clicked*/
+/* Mobile side navigation, display when hamburger is clicked*/
 .sidenav{
   height:100vh;
   width:250px;
@@ -45,6 +46,17 @@
   right: 0;
   display:none;
 }
+.repnav {
+   height:100vh;
+  width:250px;
+  background:#000a2d;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+
+  display:block;
+}
 .items{
     color:white;
    text-align:center;
@@ -53,12 +65,17 @@
 .items ul {
   list-style-type:none;
 }
+.items span {
+  text-align:right !important;
+  display:block;
+
+}
 
 .items li {
  font-size:20px;
  padding:15px;
  cursor:pointer;
- 
+ text-align: center;
 }
 .items li:first-child{
 text-align:right;
@@ -67,6 +84,12 @@ text-align:right;
 .items li:last-child {
   background:white;
   color:#000a2d;
+}
+
+.items li:hover{
+  background: white;
+  color:#000a2d;
+  transition: 0.3s;
 }
 .fa-times {
   font-size:30px;
