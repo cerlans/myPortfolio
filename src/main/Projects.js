@@ -4,18 +4,19 @@ import projectData from './projectdata.js'
 console.log(projectData)
 function Projects(props) {
     const [className, setClass] = useState('dummy');
-  console.log(className)
-  function openClose(){
-    if(className === 'dummy') {
-      setClass('modal');
-      document.body.style.overflow = 'hidden'
-    } else {
-      setClass('dummy')
-      document.body.style.overflow = 'visible'
-    }
+    
+   function popUpModal(){
+    setClass('modal');
+    document.body.style.overflow = 'hidden'
+     
+  } 
+  function test(){
+    setClass('dummy');
+    document.body.style.overflow ='visible';
   }
+ 
 return(
-  <section className='projects'>
+   <>
     <div className='col'>
       <div className='imgcontainer'>
       <img src={props.image}/>
@@ -26,12 +27,12 @@ return(
       </div>
       <div className='footer'>
         <button>Live Demo</button>
-        <button className="modal-btn" onClick = {openClose}>View More</button>
+        <button className="modal-btn" onClick = {popUpModal}>View More</button>
       </div>
     </div>
 
 {/* Below this line is a modal that will appear when the 'view more' button is clicked */}
-  <div className= {className} onClick = {openClose}>
+  <div className= {className} onClick = {test}>
      <div className="modal-content">
         <div className="modal-header">
            <h1>{props.title}</h1>
@@ -46,7 +47,7 @@ return(
         </div>
      </div>
   </div>
-  </section>
+</>
 )
 }
 
